@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موديلات النسيج</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="model1.jpg" alt="موديل 1">
+            </div>
+            <div class="slide">
+                <img src="model2.jpg" alt="موديل 2">
+            </div>
+            <div class="slide">
+                <img src="model3.jpg" alt="موديل 3">
+            </div>
+            <div class="slide">
+                <div class="download-slide">
+                    <h2>لمزيد من الموديلات قم بتحميل تطبيقنا</h2>
+                    <button class="download-btn" onclick="downloadAPK()">
+                        تحميل التطبيق
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+        
+        <!-- Dots indicator -->
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
